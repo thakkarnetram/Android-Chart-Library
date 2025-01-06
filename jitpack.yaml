@@ -3,5 +3,5 @@ jdk:
 before-install:
   -./scripts/prepareJitpackEnvironment.sh
 install:
-  - FILE="-Dfile=toggle-button-release.aar"
+  - FILE="-Dfile=chartlibrary-debug.aar"
   - mvn install:install-file $FILE -DgroupId=com.github.thakkarnetram -DartifactId=chart-library -Dversion=1.0.0 -Dpackaging=aar -DgeneratePom=true
